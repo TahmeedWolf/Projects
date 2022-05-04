@@ -1,0 +1,36 @@
+def is_leap(year):
+  if year % 4 == 0:
+    if year % 100 == 0:
+      if year % 400 == 0:
+        return True
+      else:
+        return False
+    else:
+      return True
+  else:
+    return False
+  
+
+def days_in_month(year, month):
+    month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if is_leap(year) and month ==2:
+        return 29
+    return month_days[month-1]    
+
+
+  
+
+year = int(input("Enter a year: "))
+month = int(input("Enter a month: "))
+days = days_in_month(year, month)
+print(days)
+
+
+# Return function in def is_leap(year): checks if it is True or False nothing more.
+
+# We use the def days_in_month(year, month): function to figure out if it is true or false then continue the program. The isTrue(year) function is a return condition if true we use the if is_leap(year) and month ==2:
+
+#cAfter which we follow it with  return month_days[month-1]. month-1 because the index in the list starts from 0.    
+
+
+
