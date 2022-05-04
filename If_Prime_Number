@@ -1,0 +1,27 @@
+
+def prime_checker(number):
+
+    is_Prime = True
+    
+    for i in range(2, number):
+     
+        if(number % i == 0):
+            is_Prime = False
+
+    if is_Prime:
+        print("Prime Number")
+
+    else:
+        print("Not a Prime number")           
+ 
+
+
+
+n = int(input("Check this number: "))
+prime_checker(number=n)
+
+#For it to be a prime number, the number must be divisible by both 1 and the number itself while it cannot be divide by any other number. So we need to use the range function to check if the number is divisble by the range, if not resulting in 0, it is prime.
+
+#We use if_prime because if we do not, the code gets stuck in a loop where the non primes are both resulting in both a non prime and a prime. 
+#So we put is_prime= True then put False to check it. "if is_Prime: print("Prime Number")" This statement already knows the true variant so we just use the else statement later.
+        
