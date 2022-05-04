@@ -1,0 +1,21 @@
+
+
+stored_number=0
+for number in range(1,101):
+   
+
+    if(number%3 == 0 and number%5 == 0):
+        print("FizzBuzz")
+
+    elif(number%5 == 0):
+        print("Buzz")
+
+    elif (number%3 == 0):
+        print("Fizz")
+    else:
+            print(number)        
+
+#FizzBuzz is basically a childrens' game where when a number is divisible by 3 in a range of numbers, say 1-100, the child says fizz and when the number is divisible by 5, the child says buzz and when the number is divisible by both 3 and 5, the child says fizzbuzz.
+# now in this program we have used  if(number%3 == 0 and number%5 == 0):
+# print("FizzBuzz") 
+# before the other conditions it's because if we used the other conditions before the fizzbuzz condition would get overlooked and it will not run so we write it at the top.
